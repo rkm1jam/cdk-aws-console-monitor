@@ -26,6 +26,7 @@ export class ConsoleMonitorStack extends Stack {
 
     const bucket = new Bucket(this, "cloudTrailBucket", {
       removalPolicy: RemovalPolicy.DESTROY,
+      autoDeleteObjects: true,
       lifecycleRules: [
         {
           expiration: Duration.days(14),

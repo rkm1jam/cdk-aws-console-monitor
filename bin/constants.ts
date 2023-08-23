@@ -4,7 +4,7 @@ import { NamedEnvironment } from "../lib/deployment";
  * Organization-specific prefix for tags
  */
 const tag_prefix = "dot";
-const product = "myprod";
+const product = "myproduct";
 const component = "governance";
 const contact = "Infrastructure Team";
 

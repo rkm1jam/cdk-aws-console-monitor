@@ -24,7 +24,7 @@ export class Deployment extends Stage {
     new ConsoleMonitorStack(this, "console-monitor", {
       env: props.env,
       stackName: `${props.env.name}-console-monitor`,
-      description: `/${descriptionPrefix}/Monitor changes made via the AWS console`,
+      description: `${descriptionPrefix}/Monitor changes made via the AWS console`,
       subscriptions: props.consoleMonitor.subscriptions,
       tags: getGlobalTags(props.env),
     });
